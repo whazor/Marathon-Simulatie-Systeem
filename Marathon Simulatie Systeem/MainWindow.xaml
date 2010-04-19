@@ -1,0 +1,19 @@
+﻿<Window x:Class="Marathon_Simulatie_Systeem.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Marathon Simulatie Systeem" mc:Ignorable="d" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" Height="670" Width="1082" ResizeMode="NoResize">
+    <Grid Name="mainGrid">
+        <Button Content="Hardloper toevoegen" Height="23" HorizontalAlignment="Left" Margin="10,11,0,0" Name="btnHardloperToevoegen" VerticalAlignment="Top" Width="133" Click="btnHardloperToevoegen_Click" />
+        <Button Content="Start!" Height="23" Margin="149,11,0,0" Name="btnStartRace" VerticalAlignment="Top" Click="btnStartRace_Click" HorizontalAlignment="Left" Width="77" />
+        <Rectangle Margin="0,50,0,0" Name="rectangle1" Stroke="Black" />
+        <Image Height="61" HorizontalAlignment="Left" Margin="12,60,0,0" Name="image" Source="Images/hardloper.jpg" Stretch="Fill" VerticalAlignment="Top" Width="64" DataContext="{Binding}" Visibility="Hidden" OpacityMask="#FFC42626" />
+        <Rectangle HorizontalAlignment="Left" Margin="127,50,0,0" Name="imgSensor1" Stroke="Black" Width="4" FlowDirection="RightToLeft" />
+        <Rectangle HorizontalAlignment="Left" Margin="391,50,272,0" Name="imgSensor2" Stroke="Black" Width="4" />
+        <Rectangle HorizontalAlignment="Left" Margin="623,50,0,0" Name="imgSensor3" Stroke="Black" Width="4" />
+        <Rectangle HorizontalAlignment="Left" Margin="863,50,0,0"  Name="imgSensor4" Stroke="Black" Width="4" />
+        <ListBox Height="37" HorizontalAlignment="Left" Margin="29,6,0,0" Name="sensor1Tijden" VerticalAlignment="Top" Width="222" Visibility="Hidden" />
+        <ListBox Height="37" HorizontalAlignment="Left" Margin="269,6,0,0" Name="sensor2Tijden" VerticalAlignment="Top" Width="247" />
+        <ListBox Height="37" HorizontalAlignment="Left" Margin="522,6,0,0" Name="sensor3Tijden" VerticalAlignment="Top" Width="220" />
+        <ListBox Height="37" HorizontalAlignment="Left" Margin="747,6,0,0" Name="sensor4Tijden" VerticalAlignment="Top" Width="236" />
+    </Grid>
+</Window>
